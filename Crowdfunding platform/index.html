@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowdWave Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--creating the navigation bar-->
+    <nav>
+        <img src="images/logo.png" alt="profile-img" class="logo">
+        <ul>
+            <li>Home</li>
+            <li>Campaigns</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+        <button class="nav-btn"><a href="signup.html" target="_blank">Get Started <img src="images/arrow-white.png" alt="arrow image"></a></button>
+        </nav>
+    <!--end of navigation bar-->
+    <div class="header">
+        <h1><span>CROWD</span><br>
+            <span>WAVE</span>
+            <!--<span>Powered by Blockchain</span><br>
+            <span>Secure and Transparent Funding</span>-->
+        </h1>
+        <div class="btn-container">
+            <button class="btn-dark">Learn More!<img src="images/arrow-black.png" alt=""></button>
+        </div>
+        <p>Revolutionizing crowdfunding with blockchain technology!</p>
+        <img src="images/user.png" alt="" class="user-img">
+    </div>
+    <script>
+        //changing the colour of nav bar on scrolling
+        let navbar = document.querySelector('nav')
+        window.onscroll = function()
+        {
+            if(window.scrollY > 0)
+            {
+                navbar.style.background  = '#eefff9';
+            }
+            else
+            {
+                navbar.style.background = 'transparent';
+            }
+
+        }
+    </script>
+</body>
+</html>
